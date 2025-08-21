@@ -1,0 +1,514 @@
+$whitetext: #fff;
+$bluetext: #C21807;
+$whitebackground: #fff;
+$bgtestimonial: #F5F5F5;
+
+html {
+    margin-top: 0px !important;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    background-color: #0D0D0D;
+    text-align: center;
+    z-index: 9;
+
+    .site-branding {
+        img {
+            width: 150px;
+        }
+    }
+}
+
+
+.home {
+    position: relative;
+    height: auto;
+
+    .portada {
+        position: relative;
+        padding: 40px 10%;
+        background-color: #0091ff;
+        text-align: center;
+        background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url('../img/patron_circle.webp');
+        background-size: 33%;
+        background-repeat: repeat;
+
+        @media (width > 320px) and (width < 640px) {
+            padding: 60px 40px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            color: $whitetext;
+
+            @media (width > 320px) and (width < 640px) {
+                font-size: 3rem;
+            }
+        }
+
+        h3 {
+            margin: 0px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 300;
+            color: $whitetext;
+        }
+
+        p {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 500;
+            color: $whitetext;
+        }
+
+        video {
+            width: 600px;
+
+            @media (width > 320px) and (width < 640px) {
+                width: 100%;
+            }
+        }
+
+        .btnapply {
+            margin-top: 40px;
+            text-align: center;
+
+            a {
+                width: 200px;
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 500;
+                color: $whitetext;
+                background-color: #E91E63;
+                padding: 20px 40px;
+                border-radius: 10px;
+                transition: all 300ms;
+
+                &:hover {
+                    background-color: #FFD700;
+                    color: #0D0D0D;
+                }
+            }
+        }
+    }
+
+    .gallerysec {
+        position: relative;
+        height: auto;
+        padding: 40px 10%;
+        background-color: $whitebackground;
+
+        @media (width > 320px) and (width < 640px) {
+            padding: 40px 10px;
+        }
+
+        h3 {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            margin: 0px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 3.5rem;
+
+            @media (width > 320px) and (width < 640px) {
+                font-size: 2rem;
+                line-height: 30px;
+            }
+
+            &.blue {
+                color: $bluetext;
+            }
+        }
+
+        .gallerycontainer {
+            @media (width > 641px) and (width < 970px) {
+                margin-top: 40px;
+            }
+
+            .item {
+                position: relative;
+                height: auto;
+                overflow: hidden;
+                padding: 10px;
+
+                .contentcompareimg {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-content: center;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .contentimg {
+                        width: 50%;
+                        padding: 5px;
+
+                        img {
+                            aspect-ratio: 2 / 3;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .unlock {
+        position: relative;
+        height: auto;
+        padding: 40px 10%;
+        background-color: $whitebackground;
+
+        @media (width > 320px) and (width < 640px) {
+            padding: 10px 10px;
+        }
+
+        .content {
+            .block {
+                padding: 20px 20px;
+                text-align: center;
+                border-radius: 10px;
+
+                h1 {
+                    font-family: "Space Grotesk", sans-serif;
+                    font-weight: 700;
+                    color: $bluetext;
+                    font-size: 3.5rem;
+
+                    @media (width > 320px) and (width < 640px) {
+                        font-size: 2rem;
+                        line-height: 30px;
+                    }
+                }
+
+                h3 {
+                    font-family: "Space Grotesk", sans-serif;
+                    font-weight: 700;
+                    margin: 0px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-family: "Space Grotesk", sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 3 / 2;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .why {
+        position: relative;
+        height: auto;
+        padding: 40px 10%;
+        background-color: #0091ff;
+        text-align: center;
+        background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url('../img/patron_circle.webp');
+        background-size: 33%;
+        background-repeat: repeat;
+
+        @media (width > 320px) and (width < 640px) {
+            padding: 10px 10px;
+        }
+
+        h1 {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            color: $whitetext;
+            font-size: 3.5rem;
+            text-align: center;
+
+            @media (width > 320px) and (width < 640px) {
+                font-size: 2.5rem;
+            }
+        }
+
+        p {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: $whitetext;
+            text-align: center;
+        }
+
+        .block {
+            padding: 20px;
+
+            h3 {
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 700;
+                color: $whitetext;
+            }
+
+            p {
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                color: $whitetext;
+            }
+        }
+    }
+
+    .whatunlock {
+        position: relative;
+        height: auto;
+        padding: 40px 10%;
+
+        @media (width > 320px) and (width < 640px) {
+            padding: 10px 10px 40px 10px;
+        }
+
+        .block {
+            padding: 20px;
+
+            h1 {
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 700;
+                color: $bluetext;
+                font-size: 3.5rem;
+
+                @media (width > 320px) and (width < 640px) {
+                    font-size: 2.5rem;
+                }
+            }
+
+            p {
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                color: #000;
+            }
+
+            ul {
+                list-style: none;
+                margin-left: 0px;
+
+                li {
+                    font-family: "Space Grotesk", sans-serif;
+                    font-weight: 300;
+                    font-size: 20px;
+                    color: #000;
+                    margin-bottom: 10px;
+
+                    @media (width > 320px) and (width < 640px) {
+                        margin-bottom: 20px;
+                    }
+
+                    &::before {
+                        font-family: 'Bootstrap-icons';
+                        content: '\F26A';
+                        padding-right: 5px;
+                        color: $bluetext;
+                    }
+                }
+            }
+
+            img {
+                aspect-ratio: 1;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                margin-top: 60px;
+            }
+        }
+
+        .btnapply {
+            margin-top: 40px;
+            text-align: left;
+
+            @media (width > 320px) and (width < 640px) {
+                text-align: center;
+            }
+
+            a {
+                width: 200px;
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 500;
+                color: $whitetext;
+                padding: 20px 40px;
+                border-radius: 10px;
+                background-color: #E91E63;
+                transition: all 300ms;
+
+                &:hover {
+                    background-color: #FFD700;
+                    color: #0D0D0D;
+                }
+
+                @media (width > 320px) and (width < 640px) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .applytoday {
+        position: relative;
+        height: auto;
+        padding: 40px 10%;
+        background-color: #0091ff;
+        text-align: center;
+        background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url('../img/patron_circle.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        h1 {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            color: #fff;
+            font-size: 3.5rem;
+
+            @media (width > 320px) and (width < 640px) {
+                font-size: 2.5rem;
+            }
+        }
+
+        .btnapply {
+            margin-top: 40px;
+            text-align: center;
+
+            a {
+                width: 200px;
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 500;
+                color: $whitetext;
+                padding: 20px 40px;
+                border-radius: 10px;
+                background-color: #E91E63;
+                transition: all 300ms;
+
+                &:hover {
+                    background-color: #FFD700;
+                    color: #0D0D0D;
+                }
+            }
+        }
+    }
+
+    .testimonials {
+        position: relative;
+        height: auto;
+        padding: 40px 10%;
+
+        @media (width > 320px) and (width < 640px) {
+            padding: 40px 40px;
+        }
+
+        .testimonial {
+            padding: 20px;
+            margin-bottom: 60px;
+            -webkit-border-top-right-radius: 10px;
+            -webkit-border-bottom-right-radius: 10px;
+            -moz-border-radius-topright: 10px;
+            -moz-border-radius-bottomright: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            img {
+                aspect-ratio: 1;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -webkit-border-top-left-radius: 10px;
+                -webkit-border-bottom-left-radius: 10px;
+                -moz-border-radius-topleft: 10px;
+                -moz-border-radius-bottomleft: 10px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .text {
+                padding: 0px 60px;
+
+                @media (width > 320px) and (width < 640px) {
+                    padding: 20px 20px;
+                }
+
+                @media (width > 641px) and (width < 970px) {
+                    padding: 20px 20px;
+                }
+
+                h3 {
+                    font-family: "Space Grotesk", sans-serif;
+                    font-weight: 700;
+                    color: $bluetext;
+                    margin-bottom: 40px;
+
+                    @media (width > 320px) and (width < 640px) {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                p {
+                    font-family: "Space Grotesk", sans-serif;
+                    font-weight: 500;
+                    font-size: 28px;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .readytolife {
+        position: relative;
+        height: auto;
+        padding: 40px 10%;
+
+        h3 {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            color: $bluetext;
+            margin-bottom: 40px;
+            font-size: 3.5rem;
+
+            @media (width > 320px) and (width < 640px) {
+                font-size: 2.5rem;
+            }
+        }
+
+        p {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+            color: #000;
+        }
+
+        .btnapply {
+            margin-top: 40px;
+            text-align: center;
+
+            a {
+                width: 200px;
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 500;
+                color: $whitetext;
+                padding: 20px 40px;
+                border-radius: 10px;
+                background-color: #E91E63;
+                transition: all 300ms;
+
+                &:hover {
+                    background-color: #FFD700;
+                    color: #0D0D0D;
+                }
+            }
+        }
+    }
+}
+
+.site-footer {
+    display: none;
+}

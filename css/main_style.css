@@ -1,0 +1,470 @@
+html {
+  margin-top: 0px !important;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #0D0D0D;
+  text-align: center;
+  z-index: 9;
+}
+.site-header .site-branding img {
+  width: 150px;
+}
+
+.home {
+  position: relative;
+  height: auto;
+}
+.home .portada {
+  position: relative;
+  padding: 40px 10%;
+  background-color: #0091ff;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url("../img/patron_circle.webp");
+  background-size: 33%;
+  background-repeat: repeat;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .portada {
+    padding: 60px 40px;
+  }
+}
+.home .portada h1 {
+  font-size: 3.5rem;
+  margin: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .portada h1 {
+    font-size: 3rem;
+  }
+}
+.home .portada h3 {
+  margin: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+.home .portada p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+.home .portada video {
+  width: 600px;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .portada video {
+    width: 100%;
+  }
+}
+.home .portada .btnapply {
+  margin-top: 40px;
+  text-align: center;
+}
+.home .portada .btnapply a {
+  width: 200px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background-color: #E91E63;
+  padding: 20px 40px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.home .portada .btnapply a:hover {
+  background-color: #FFD700;
+  color: #0D0D0D;
+}
+.home .gallerysec {
+  position: relative;
+  height: auto;
+  padding: 40px 10%;
+  background-color: #fff;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .gallerysec {
+    padding: 40px 10px;
+  }
+}
+.home .gallerysec h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  margin: 0px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 3.5rem;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .gallerysec h3 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+}
+.home .gallerysec h3.blue {
+  color: #C21807;
+}
+@media (width > 641px) and (width < 970px) {
+  .home .gallerysec .gallerycontainer {
+    margin-top: 40px;
+  }
+}
+.home .gallerysec .gallerycontainer .item {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  padding: 10px;
+}
+.home .gallerysec .gallerycontainer .item .contentcompareimg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .gallerysec .gallerycontainer .item .contentcompareimg .contentimg {
+  width: 50%;
+  padding: 5px;
+}
+.home .gallerysec .gallerycontainer .item .contentcompareimg .contentimg img {
+  aspect-ratio: 2/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.home .unlock {
+  position: relative;
+  height: auto;
+  padding: 40px 10%;
+  background-color: #fff;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .unlock {
+    padding: 10px 10px;
+  }
+}
+.home .unlock .content .block {
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.home .unlock .content .block h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #C21807;
+  font-size: 3.5rem;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .unlock .content .block h1 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+}
+.home .unlock .content .block h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  margin: 0px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+}
+.home .unlock .content .block p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.home .unlock .content .block img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.home .why {
+  position: relative;
+  height: auto;
+  padding: 40px 10%;
+  background-color: #0091ff;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url("../img/patron_circle.webp");
+  background-size: 33%;
+  background-repeat: repeat;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .why {
+    padding: 10px 10px;
+  }
+}
+.home .why h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .why h1 {
+    font-size: 2.5rem;
+  }
+}
+.home .why p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.home .why .block {
+  padding: 20px;
+}
+.home .why .block h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.home .why .block p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.home .whatunlock {
+  position: relative;
+  height: auto;
+  padding: 40px 10%;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .whatunlock {
+    padding: 10px 10px 40px 10px;
+  }
+}
+.home .whatunlock .block {
+  padding: 20px;
+}
+.home .whatunlock .block h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #C21807;
+  font-size: 3.5rem;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .whatunlock .block h1 {
+    font-size: 2.5rem;
+  }
+}
+.home .whatunlock .block p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.home .whatunlock .block ul {
+  list-style: none;
+  margin-left: 0px;
+}
+.home .whatunlock .block ul li {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .whatunlock .block ul li {
+    margin-bottom: 20px;
+  }
+}
+.home .whatunlock .block ul li::before {
+  font-family: "Bootstrap-icons";
+  content: "\f26a";
+  padding-right: 5px;
+  color: #C21807;
+}
+.home .whatunlock .block img {
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.home .whatunlock .btnapply {
+  margin-top: 40px;
+  text-align: left;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .whatunlock .btnapply {
+    text-align: center;
+  }
+}
+.home .whatunlock .btnapply a {
+  width: 200px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #E91E63;
+  transition: all 300ms;
+}
+.home .whatunlock .btnapply a:hover {
+  background-color: #FFD700;
+  color: #0D0D0D;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .whatunlock .btnapply a {
+    display: inline-block;
+  }
+}
+.home .applytoday {
+  position: relative;
+  height: auto;
+  padding: 40px 10%;
+  background-color: #0091ff;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url("../img/patron_circle.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home .applytoday h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3.5rem;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .applytoday h1 {
+    font-size: 2.5rem;
+  }
+}
+.home .applytoday .btnapply {
+  margin-top: 40px;
+  text-align: center;
+}
+.home .applytoday .btnapply a {
+  width: 200px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #E91E63;
+  transition: all 300ms;
+}
+.home .applytoday .btnapply a:hover {
+  background-color: #FFD700;
+  color: #0D0D0D;
+}
+.home .testimonials {
+  position: relative;
+  height: auto;
+  padding: 40px 10%;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .testimonials {
+    padding: 40px 40px;
+  }
+}
+.home .testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 60px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.home .testimonials .testimonial img {
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.home .testimonials .testimonial .text {
+  padding: 0px 60px;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .testimonials .testimonial .text {
+    padding: 20px 20px;
+  }
+}
+@media (width > 641px) and (width < 970px) {
+  .home .testimonials .testimonial .text {
+    padding: 20px 20px;
+  }
+}
+.home .testimonials .testimonial .text h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #C21807;
+  margin-bottom: 40px;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .testimonials .testimonial .text h3 {
+    font-size: 2.5rem;
+  }
+}
+.home .testimonials .testimonial .text p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #000;
+}
+.home .readytolife {
+  position: relative;
+  height: auto;
+  padding: 40px 10%;
+}
+.home .readytolife h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #C21807;
+  margin-bottom: 40px;
+  font-size: 3.5rem;
+}
+@media (width > 320px) and (width < 640px) {
+  .home .readytolife h3 {
+    font-size: 2.5rem;
+  }
+}
+.home .readytolife p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #000;
+}
+.home .readytolife .btnapply {
+  margin-top: 40px;
+  text-align: center;
+}
+.home .readytolife .btnapply a {
+  width: 200px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #E91E63;
+  transition: all 300ms;
+}
+.home .readytolife .btnapply a:hover {
+  background-color: #FFD700;
+  color: #0D0D0D;
+}
+
+.site-footer {
+  display: none;
+}/*# sourceMappingURL=main_style.css.map */
