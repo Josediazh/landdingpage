@@ -7,6 +7,10 @@ html {
     margin-top: 0px !important;
 }
 
+.grid-x {
+    align-items: center;
+}
+
 .site-header {
     position: sticky;
     top: 0;
@@ -17,6 +21,10 @@ html {
     .site-branding {
         img {
             width: 150px;
+
+            @media (width > 320px) and (width < 640px) {
+                width: 100px;
+            }
         }
     }
 }
@@ -31,8 +39,7 @@ html {
         padding: 40px 10%;
         background-color: #0091ff;
         text-align: center;
-        background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url('../img/patron_circle.webp');
-        background-size: 33%;
+        background-color: #0D0D0D;
         background-repeat: repeat;
 
         @media (width > 320px) and (width < 640px) {
@@ -62,10 +69,11 @@ html {
             font-family: "Space Grotesk", sans-serif;
             font-weight: 500;
             color: $whitetext;
+            font-size: 18px;
         }
 
         video {
-            width: 600px;
+            width: 80%;
 
             @media (width > 320px) and (width < 640px) {
                 width: 100%;
@@ -77,11 +85,12 @@ html {
             text-align: center;
 
             a {
+                display: inline-block;
                 width: 200px;
                 font-family: "Space Grotesk", sans-serif;
                 font-weight: 500;
                 color: $whitetext;
-                background-color: #E91E63;
+                background-color: rgba(0, 147, 255);
                 padding: 20px 40px;
                 border-radius: 10px;
                 transition: all 300ms;
@@ -196,12 +205,10 @@ html {
                 p {
                     font-family: "Space Grotesk", sans-serif;
                     font-weight: 500;
-                    font-size: 20px;
+                    font-size: 18px;
                 }
 
                 img {
-                    width: 100%;
-                    aspect-ratio: 3 / 2;
                     object-fit: cover;
                     border-radius: 10px;
                 }
@@ -215,7 +222,8 @@ html {
         padding: 40px 10%;
         background-color: #0091ff;
         text-align: center;
-        background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url('../img/patron_circle.webp');
+        background-color: #0D0D0D;
+        background-size: cover;
         background-size: 33%;
         background-repeat: repeat;
 
@@ -238,7 +246,7 @@ html {
         p {
             font-family: "Space Grotesk", sans-serif;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 18px;
             color: $whitetext;
             text-align: center;
         }
@@ -250,12 +258,14 @@ html {
                 font-family: "Space Grotesk", sans-serif;
                 font-weight: 700;
                 color: $whitetext;
+                border-bottom: 1px solid rgba(0, 147, 255);
+                padding-bottom: 10px;
             }
 
             p {
                 font-family: "Space Grotesk", sans-serif;
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 18px;
                 color: $whitetext;
             }
         }
@@ -287,7 +297,7 @@ html {
             p {
                 font-family: "Space Grotesk", sans-serif;
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 18px;
                 color: #000;
             }
 
@@ -298,7 +308,7 @@ html {
                 li {
                     font-family: "Space Grotesk", sans-serif;
                     font-weight: 300;
-                    font-size: 20px;
+                    font-size: 18px;
                     color: #000;
                     margin-bottom: 10px;
 
@@ -316,7 +326,6 @@ html {
             }
 
             img {
-                aspect-ratio: 1;
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
@@ -334,13 +343,14 @@ html {
             }
 
             a {
+                display: inline-block;
                 width: 200px;
                 font-family: "Space Grotesk", sans-serif;
                 font-weight: 500;
                 color: $whitetext;
                 padding: 20px 40px;
                 border-radius: 10px;
-                background-color: #E91E63;
+                background-color: rgba(0, 147, 255);
                 transition: all 300ms;
 
                 &:hover {
@@ -361,7 +371,7 @@ html {
         padding: 40px 10%;
         background-color: #0091ff;
         text-align: center;
-        background-image: linear-gradient(to bottom, rgba(255, 0, 110, 0.9), rgba(255, 215, 0, 0.9)), url('../img/patron_circle.webp');
+        background-color: #0D0D0D;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -382,13 +392,14 @@ html {
             text-align: center;
 
             a {
+                display: inline-block;
                 width: 200px;
                 font-family: "Space Grotesk", sans-serif;
                 font-weight: 500;
                 color: $whitetext;
                 padding: 20px 40px;
                 border-radius: 10px;
-                background-color: #E91E63;
+                background-color: rgba(0, 147, 255);
                 transition: all 300ms;
 
                 &:hover {
@@ -455,7 +466,7 @@ html {
                 p {
                     font-family: "Space Grotesk", sans-serif;
                     font-weight: 500;
-                    font-size: 28px;
+                    font-size: 18px;
                     color: #000;
                 }
             }
@@ -467,42 +478,53 @@ html {
         height: auto;
         padding: 40px 10%;
 
-        h3 {
-            font-family: "Space Grotesk", sans-serif;
-            font-weight: 700;
-            color: $bluetext;
-            margin-bottom: 40px;
-            font-size: 3.5rem;
+        .content {
+            padding: 40px;
+            background-color: rgba(0, 147, 255);
 
             @media (width > 320px) and (width < 640px) {
-                font-size: 2.5rem;
+                padding: 20px;
             }
-        }
 
-        p {
-            font-family: "Space Grotesk", sans-serif;
-            font-weight: 500;
-            font-size: 28px;
-            color: #000;
-        }
+            h3 {
+                font-family: "Space Grotesk", sans-serif;
+                font-weight: 700;
+                color: $whitetext;
+                margin-bottom: 40px;
+                font-size: 3.5rem;
 
-        .btnapply {
-            margin-top: 40px;
-            text-align: center;
+                @media (width > 320px) and (width < 640px) {
+                    font-size: 2.5rem;
+                }
+            }
 
-            a {
-                width: 200px;
+            p {
                 font-family: "Space Grotesk", sans-serif;
                 font-weight: 500;
+                font-size: 25px;
                 color: $whitetext;
-                padding: 20px 40px;
-                border-radius: 10px;
-                background-color: #E91E63;
-                transition: all 300ms;
+                padding: 20px;
+            }
 
-                &:hover {
+            .btnapply {
+                margin-top: 40px;
+                text-align: center;
+
+                a {
+                    display: inline-block;
+                    width: 200px;
+                    font-family: "Space Grotesk", sans-serif;
+                    font-weight: 500;
+                    color: $whitetext;
+                    padding: 20px 40px;
+                    border-radius: 10px;
                     background-color: #FFD700;
                     color: #0D0D0D;
+
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
                 }
             }
         }
